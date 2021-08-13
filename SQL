@@ -1,0 +1,21 @@
+CREATE TABLE friends (id Integer,name Text,birthday date);
+Insert into friends (id,name,birthday)
+Values (1,'Ororo Munroe','1940-05-30');
+Select* From friends;
+
+Insert into friends (id, name,birthday)
+Values(2,'Dave','1950-07-30');
+Values (3,'Staci','1960-07-01');
+
+Alter Table friends
+Add email varchar;
+
+Update friends
+Set email = 'storm@codeacademy.com'
+Where id=1;
+
+Delete from friends
+Where email='storm@codeacademy.com';
+
+Select*
+From friends;
